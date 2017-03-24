@@ -8,6 +8,7 @@ view: country {
   }
 
   dimension: country {
+    view_label: "Location"
     type: string
     sql: ${TABLE}.country ;;
   }

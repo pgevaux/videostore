@@ -8,6 +8,7 @@ view: city {
   }
 
   dimension: city {
+    view_label: "Location"
     type: string
     sql: ${TABLE}.city ;;
   }

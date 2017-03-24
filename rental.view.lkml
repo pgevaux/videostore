@@ -67,6 +67,7 @@ view: rental {
     sql: ${TABLE}.staff_id ;;
   }
 
+
   measure: count {
     type: count
     drill_fields: [detail*]

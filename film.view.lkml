@@ -37,6 +37,11 @@ view: film {
     sql: ${TABLE}.length ;;
   }
 
+  measure: average_film_length {
+    type: average
+    sql: ${length} ;;
+  }
+
   dimension: original_language_id {
     type: yesno
     sql: ${TABLE}.original_language_id ;;

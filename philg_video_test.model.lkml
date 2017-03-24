@@ -60,4 +60,10 @@ explore: rental {
     sql_on: ${city.country_id} = ${country.country_id} ;;
     relationship: many_to_one
   }
+
+  join: times_rented {
+    type: inner
+    sql_on: ${rental.inventory_id} = ${times_rented.inventory_id} ;;
+    relationship: many_to_one
+  }
 }
